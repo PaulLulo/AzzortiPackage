@@ -1,0 +1,6 @@
+#exportaciones
+
+export(gen_q_besty)
+export(gen_table)
+export(Niv_Inv_Analysis)
+export(Niv_Svc_Analysis)
