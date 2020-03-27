@@ -282,7 +282,7 @@ plot_niv_svc<- function(df_base, lugar, linea ,momento,ruta=""){
   df_niv_svc$TIPO= DF1$colores[match(df_niv_svc$variable, DF1$TIPO)]
   df_niv_svc$variable<- as.character(df_niv_svc$variable)
 
-  df_niv_svc$variable<- substr(df_niv_svc$variable,9, length(df_niv_svc$variable))
+  df_niv_svc$variable<- substr(df_niv_svc$variable,9, 100)
   library(dplyr)
   df_niv_svc$variable[grepl("BES", df_niv_svc$variable)] <- "Q_BESTY"
   df_niv_svc$variable<- as.factor(df_niv_svc$variable)
@@ -374,7 +374,7 @@ plot_niv_svc_cm<- function(df_base, lugar, linea ,momento,ruta=""){
   df_niv_svc$TIPO= DF1$colores[match(df_niv_svc$variable, DF1$TIPO)]
   df_niv_svc$variable<- as.character(df_niv_svc$variable)
 
-  df_niv_svc$variable<- substr(df_niv_svc$variable,15, length(df_niv_svc$variable))
+  df_niv_svc$variable<- substr(df_niv_svc$variable,15, 100)
   library(dplyr)
   df_niv_svc$variable[grepl("BE", df_niv_svc$variable)] <- "Q_BESTY"
   df_niv_svc$variable[grepl("RG", df_niv_svc$variable)] <- "Q_RG3"
@@ -520,7 +520,7 @@ plot_niv_inv<- function(df_base, lugar, linea ,momento,ruta=""){
   df_niv_svc$TIPO= DF1$colores[match(df_niv_svc$variable, DF1$TIPO)]
   df_niv_svc$variable<- as.character(df_niv_svc$variable)
 
-  df_niv_svc$variable<- substr(df_niv_svc$variable,9, length(df_niv_svc$variable))
+  df_niv_svc$variable<- substr(df_niv_svc$variable,9, 100)
   library(dplyr)
   df_niv_svc$variable[grepl("BES", df_niv_svc$variable)] <- "Q_BESTY"
   df_niv_svc$variable<- as.factor(df_niv_svc$variable)
@@ -607,7 +607,7 @@ plot_niv_inv_cm<- function(df_base, lugar, linea ,momento,ruta=""){
   df_niv_svc$TIPO= DF1$colores[match(df_niv_svc$variable, DF1$TIPO)]
   df_niv_svc$variable<- as.character(df_niv_svc$variable)
 
-  df_niv_svc$variable<- substr(df_niv_svc$variable,15, length(df_niv_svc$variable))
+  df_niv_svc$variable<- substr(df_niv_svc$variable,15, 100)
   library(dplyr)
   df_niv_svc$variable[grepl("BES", df_niv_svc$variable)] <- "Q_BESTY"
   df_niv_svc$variable<- as.factor(df_niv_svc$variable)
