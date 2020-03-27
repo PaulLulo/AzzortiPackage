@@ -327,7 +327,7 @@ plot_niv_svc<- function(df_base, lugar, linea ,momento,ruta=""){
                   momento,"\n",
                   substr(min(DFA$CODI_CAMP), 1,4),
                   sep = ""))+
-    xlab("Campana") +
+    xlab("Campaña") +
     ylab("Nivel de servicio") +
     geom_text(#position = position_dodge(width = 0.5),
       color = "black",
@@ -421,7 +421,7 @@ plot_niv_svc_cm<- function(df_base, lugar, linea ,momento,ruta=""){
                    momento,"\n",
                    substr(min(DFA$CODI_CAMP), 1,4),
                    sep = ""))+
-    xlab("Campana") +
+    xlab("Campaña") +
     ylab("Nivel de servicio") +
     geom_text(#position = position_dodge(width = 0.5),
       color = "black",
@@ -565,7 +565,7 @@ plot_niv_inv<- function(df_base, lugar, linea ,momento,ruta=""){
                   momento,"\n",
                   substr(min(DFA$CODI_CAMP), 1,4),
                   sep = ""))+
-    xlab("Campana") +
+    xlab("Campaña") +
     ylab("Nivel de inventario") +
     geom_text(#position = position_dodge(width = 0.5),
       color = "black",
@@ -653,7 +653,7 @@ plot_niv_inv_cm<- function(df_base, lugar, linea ,momento,ruta=""){
                   momento,"\n",
                   substr(min(DFA$CODI_CAMP), 1,4),
                   sep = ""))+
-    xlab("Campana") +
+    xlab("Campaña") +
     ylab("Nivel de inventario") +
     geom_text(#position = position_dodge(width = 0.5),
       color = "black",
